@@ -9,9 +9,7 @@ app = typer.Typer()
 
 @app.command()
 def convert(ip):
-    ip_addr = '.'.join([bin(int(x))[2:] for x in ip.split('.')])
-    print(ip_addr)
-
+     print('.'.join([bin(int(x))[2:] for x in ip.split('.')]))
 
 if __name__ == '__main__':
     app()
